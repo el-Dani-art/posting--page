@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini Blog DevStart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="formulario">
+        <h1>Crie seu post</h1>
+        <form id="postForm">
+          <label for="titulo">Título:</label>
+          <input
+            type="text"
+            id="titulo"
+            placeholder="Digite o título"
+            required
+          />
+
+          <label for="conteudo">Conteúdo:</label>
+          <textarea
+            id="conteudo"
+            placeholder="Escreva seu conteúdo..."
+            required
+          ></textarea>
+
+          <button type="submit">Publicar</button>
+        </form>
+      </section>
+
+      <section class="post-renderizado">
+        <h2>Último post enviado:</h2>
+        <h3 id="renderizador-titulo"></h3>
+        <p id="renderizador-conteudo"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
